@@ -8,7 +8,9 @@ var isPrefixString = function (s, words) {
   }
   return false;
 };
+
+const words = ["i", "love", "leetcode", "apples"];
 const s = "iloveleetcode";
-const words = ["apples", "i", "love", "leetcode"];
+
 const result = isPrefixString(s, words);
 console.log(result);
