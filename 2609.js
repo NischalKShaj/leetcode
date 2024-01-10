@@ -1,19 +1,19 @@
 var findTheLongestBalancedSubstring = function (s) {
   let maxLength = 0;
   let openCount = 0;
-  let closeCount = 0;
+  let count = 0;
 
   for (let i = 0; i < s.length; i++) {
     if (s[i] === "0") {
       if (openCount !== 0) {
         openCount = 0;
-        closeCount = 0;
+        count = 0;
       }
-      closeCount++;
+      count++;
     } else {
       openCount++;
-      if (closeCount !== 0) {
-        maxLength = Math.max(maxLength, 2 * Math.min(openCount, closeCount));
+      if (count !== 0) {
+        maxLength = Math.max(maxLength, 2 * Math.min(openCount, count));
       }
     }
   }
