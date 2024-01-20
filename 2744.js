@@ -10,5 +10,5 @@ var maximumNumberOfStringPairs = function (words) {
   }
   console.log(count);
 };
-let words = ["cd", "ac", "dc", "ca", "zz"];
+let words = ["cd", "ac", "dc", "ca", "zz"]; 
 let result = maximumNumberOfStringPairs(words);
